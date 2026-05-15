@@ -1,15 +1,15 @@
 {
-  name: My Project,
-  image: mcr.microsoft.com/devcontainers/base:ubuntu,
-  features: {
-    ghcr.io/devcontainers/features/node:1: {
-      version: lts
+  "name": "My Project",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
     }
   },
-  postCreateCommand: npm install -g @anthropic-ai/claude-code,
-  customizations: {
-    vscode: {
-      extensions: [dbaeumer.vscode-eslint]
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+  "customizations": {
+    "vscode": {
+      "extensions": []
     }
   }
 }
